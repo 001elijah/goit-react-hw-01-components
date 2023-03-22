@@ -5,7 +5,7 @@ const Statistics = (props) => {
     const { title, stats } = props;
     return (
         <section className="statistics">
-        <h2 className={`title ${title ? "visible" : ""}`}>Upload stats</h2>
+        <h2 className={`title ${title ? "visible" : ""}`}>{title}</h2>
       
         <ul className="stat-list">
             {stats.map(({ id, label, percentage }) => {
@@ -16,14 +16,14 @@ const Statistics = (props) => {
                         percentage={percentage}
                     />
                 );
-            })};
+            })}
         </ul>
       </section>
     );
 };
 
 Statistics.propTypes = {
-    title: PropTypes.bool,
+    title: PropTypes.string,
     stats: PropTypes.array.isRequired
 }
 
