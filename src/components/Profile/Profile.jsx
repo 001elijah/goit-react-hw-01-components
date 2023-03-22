@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Profile = ({ avatar, username, tag, location, stats}) => {
+const Profile = ({ avatar, username, tag, location, stats }) => {
     return (
         <div className="profile">
         <div className="description">
@@ -10,7 +10,7 @@ const Profile = ({ avatar, username, tag, location, stats}) => {
             className="avatar"
           />
           <p className="name">{username}</p>
-          <p className="tag">{tag}</p>
+          <p className="tag">@{tag}</p>
           <p className="location">{location}</p>
         </div>
       
