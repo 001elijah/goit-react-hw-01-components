@@ -1,15 +1,17 @@
 import PropTypes from "prop-types";
 import TransactionsCase from "./TransactionsCase/TransactionsCase";
+import { TransactionsTable, TableH } from "./Transactions.style";
+
 
 const Transactions = (props) => {
     const { transactions } = props;
     return (
-        <table className="transaction-history">
+        <TransactionsTable>
         <thead>
             <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
+            <TableH>Type</TableH>
+            <TableH>Amount</TableH>
+            <TableH>Currency</TableH>
             </tr>
         </thead>
 
@@ -25,7 +27,7 @@ const Transactions = (props) => {
                 );
             })}
         </tbody>
-        </table>
+        </TransactionsTable>
     );
 };
 

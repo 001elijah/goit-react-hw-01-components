@@ -16,6 +16,7 @@ export const StatisticsTitle = styled.h2`
     padding: 30px 0;
     font-size: 44px;
     color: grey;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
 `;
 
 // export const TitleVisible = styled(StatisticsTitle)`
@@ -26,6 +27,7 @@ export const StatList = styled.ul`
     display: flex;
     justify-content: center;
     width: 700px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);  
 `;
 
 export const Item = styled.li`
