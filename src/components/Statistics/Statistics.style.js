@@ -4,14 +4,14 @@ export const StatisticsCard = styled.section`
     display: block;
     margin: 0 auto 30px auto;
     padding: 0 15px;
-    width: 768px;
+    width: 700px;
 `;
 
 export const StatisticsTitle = styled.h2`
-    display: block;
     text-align: center;
     width: 700px;
-    margin: 0 auto;
+    margin: 0;
+    margin-right: 0;
     background-color: white;
     padding: 30px 0;
     font-size: 44px;
@@ -25,7 +25,7 @@ export const StatisticsTitle = styled.h2`
 export const StatList = styled.ul`
     display: flex;
     justify-content: center;
-    list-style: none;
+    width: 700px;
 `;
 
 export const Item = styled.li`
