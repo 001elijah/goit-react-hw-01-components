@@ -1,13 +1,14 @@
 import PropTypes from "prop-types";
 import StatisticsItem from "./StatisticsItem/StatisticsItem";
+import { StatisticsCard, StatisticsTitle, StatList } from "./Statistics.style";
 
 const Statistics = (props) => {
     const { title, stats } = props;
     return (
-        <section className="statistics">
-        <h2 className={`title ${title ? "visible" : ""}`}>{title}</h2>
+        <StatisticsCard>
+        {title && <StatisticsTitle>{title}</StatisticsTitle>}
       
-        <ul className="stat-list">
+        <StatList className="stat-list">
             {stats.map(({ id, label, percentage }) => {
                 return (
                     <StatisticsItem
@@ -17,8 +18,8 @@ const Statistics = (props) => {
                     />
                 );
             })}
-        </ul>
-      </section>
+        </StatList>
+      </StatisticsCard>
     );
 };
 
